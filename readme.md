@@ -40,7 +40,7 @@ This implementation has **high accuracy** because we can use **large size models
 
 **Sending and analyzing realtime video** would lead to **more latency** and **bad user experience.**
 
-### Flow Chart if AI implemented on Backend
+### Flow Chart if AI implemented on Frontend
 
 ```mermaid
 graph LR
