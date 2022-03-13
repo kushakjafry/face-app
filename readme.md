@@ -2,6 +2,11 @@
 
 App created on top of **face-api.js** used for detecting **face emotions** and creating **face mesh** in realtime. App uses users **webcam** to create video stream and uses models to detect faces and emotions.
 
+# DEMO
+
+Checkout site here [DEMO](https://iby.kushakjafry.in/).
+Deployed site in digital ocean.
+
 # Technologies Used
 
 ### Frontend
@@ -55,6 +60,17 @@ This implementation has **low latency** because no **request are sent to backend
 #### Drawbacks
 
 It has **low accuracy** because we have to use **simple and small sized models** due to **limited bandwidth and computing power** on **client**.
+
+### IMAGES
+
+![Hero section](github_images/hero-section.png)
+![Features section](github_images/features-section.png)
+![Demo section](github_images/demo-section.png)
+![Face-Detection](github_images/face-detect.png)
+![Face Expression Happy](github_images/face-expression-happy.png)
+![Face Expression Neutral](github_images/face-expression-neutral.png)
+![Face Expression Surprised](github_images/face-expression-surprised.png)
+![Face Mesh](github_images/face-mask.png)
 
 ## Running the server
 
