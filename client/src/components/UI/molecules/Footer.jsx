@@ -9,9 +9,12 @@ function Footer() {
         <div className="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
           <div class="font-bold text-white">Face-App</div>
           <ul className="flex text-white uppercase gap-12 text-xs">
-            <li className="cursor-pointer">Features</li>
-            <li className="cursor-pointer">Pricing</li>
-            <li className="cursor-pointer">Contact</li>
+            <li className="cursor-pointer">
+              <a href="#features">Features</a>
+            </li>
+            <li className="cursor-pointer">
+              <a href="#demo">Demo</a>
+            </li>
           </ul>
         </div>
         <ul className="flex gap-10 mt-12 md:mt-0">

@@ -2,6 +2,8 @@ import { faPause, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useRef, useState } from "react";
 import * as faceapi from "face-api.js";
+import { emojies } from "../utils/emojies";
+import { writeOnCanvas } from "../utils/canvasUtils";
 
 function Video({ activeTab }) {
   const [stream, setStream] = useState(null);
@@ -89,8 +91,10 @@ function Video({ activeTab }) {
         if (activeTab === 1) {
           faceapi.draw.drawDetections(canvasRef.current, resized);
         } else if (activeTab === 2) {
-          faceapi.draw.drawDetections(canvasRef.current, resized);
-          faceapi.draw.drawFaceExpressions(canvasRef.current, resized);
+          const currentEmotion = detections.expressions.asSortedArray()[0];
+          const emoji =
+            emojies[currentEmotion.expression] || emojies["neutral"];
+          writeOnCanvas(context, emoji, 50, 20, 20);
         } else {
           faceapi.draw.drawFaceLandmarks(canvasRef.current, resized);
         }

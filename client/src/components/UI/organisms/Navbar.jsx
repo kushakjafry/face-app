@@ -1,5 +1,4 @@
 import React from "react";
-import HamburgerIcon from "../atoms/icons/HamburgerIcon";
 import NavLinks from "../molecules/NavLinks";
 
 function Navbar() {
@@ -8,7 +7,6 @@ function Navbar() {
       <nav className="container flex items-center py-4 mt-4 sm:mt-12">
         <div class="py-1 font-bold ">Face-App</div>
         <NavLinks />
-        <HamburgerIcon />
       </nav>
     </header>
   );
